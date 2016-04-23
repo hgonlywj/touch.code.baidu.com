@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>touch test</title>
+    <script src="touch.min.js" ></script>
+</head>
+    <style>
+        #hg {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: 
+        }
+
+        
+
+    </style>
+<body>
+
+    <div id="hg">
+        <img id="wj" src="res/10.png" height="512" width="512" >
+    </div>
+    
+    <script>
+        var angle = 0;
+        touch.on('#wj', 'touchstart', function(ev){
+            ev.startRotate();    // startRotate
+            ev.preventDefault();
+        });
+
+        touch.on('#wj', 'rotate', function(ev){
+            var totalAngle = angle + ev.rotation;
+            if(ev.fingerStatus === 'end'){
+                angle = angle + ev.rotation;
+            }
+            this.style.webkitTransform = 'rotate(' + totalAngle + 'deg)';
+        });
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

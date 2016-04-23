@@ -5,8 +5,9 @@
 	<title>Timer</title>
 	<meta name="viewport" content="width=480px, initial-scale=0.7, maximum-scale=0.7">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" href="test.css">
 	<style>
-		html {
+	/*	html {
 			background : #fcfcfc;
 		}
 	
@@ -82,7 +83,7 @@
 			font-family: "Hiragingo Sans GB", Helvetica, "Lucida Grande", Verdana, sans-serif;
 			color : #4B4B4B;
 			letter-spacing : 2px;
-		}
+		}*/
 	</style>
 </head>
 <body>
@@ -110,7 +111,6 @@
 			move("#panel").set("opacity","1").duration(dur).end()
 			move("#hand").rotate(0).set("opacity","1").duration(dur).end();
 			move("#ruler").set("top","-481px").set("opacity","1").duration(dur).end();
-			
 		});
 		
 		touch.on(document, "DOMContentLoaded", function(){
@@ -221,5 +221,7 @@
 		});
 		
 	</script>
+	<link rel="stylesheet" href="test.css">
+
 </body>
 </html>

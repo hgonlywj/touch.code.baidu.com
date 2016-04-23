@@ -1,0 +1,77 @@
+    html {
+            background : #fcfcfc;
+        }
+    
+        #timer {
+            position : absolute;
+            -webkit-user-select : none;
+        }
+    
+        #panel {
+            position : absolute;
+            width : 338px;
+            height : 353px;
+            background : url("img/blank_clock.png") no-repeat;
+            opacity : 0;
+        }
+        
+        #degree {
+            position : absolute;
+            width : 253px;
+            height : 253px;
+            background : url("img/degree.png") no-repeat;
+            left : 42.5px;
+            top : 50px;
+        }
+        
+        #d15 {
+            position : absolute;
+            right : 8px;
+            top : 110.5px;
+        }
+        
+        #d60 {
+            position : absolute;
+            left : 110.5px;
+            top : 8px;
+        }
+        
+        #handcenter {
+            position : absolute;
+            top : 99.5px;
+            left : 99.5px;
+        }
+        
+        #hand {
+            position : absolute;
+            left : 105.5px;
+            top : 22.5px;
+            -webkit-transform-origin-x: 21px;
+            -webkit-transform-origin-y: 104px;
+            -webkit-transform : rotate(-60deg);
+            opacity : 0;
+        }
+        
+        #ruler {
+            position : absolute;
+            top : -281px;
+            left : 340px;
+            width : 103px;
+            height : 605px;
+            background : url("img/ruler.png") no-repeat;
+            cursor : pointer;
+            opacity : 0;
+        }
+        
+        #display {
+            position : absolute;
+            width : 3em;
+            height : 1.2em;
+            left: 134px;
+            bottom : -100px;
+            opacity : 0;
+            font-size: 1.6em;
+            font-family: "Hiragingo Sans GB", Helvetica, "Lucida Grande", Verdana, sans-serif;
+            color : #4B4B4B;
+            letter-spacing : 2px;
+        }
